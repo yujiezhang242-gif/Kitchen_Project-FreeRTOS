@@ -1,0 +1,14 @@
+; STM32F103C8: enforce 62KiB code, final 2KiB reserved for config A/B.
+LR_IROM1 0x08000000 0x0000F800 {
+  ER_IROM1 0x08000000 0x0000F800 {
+    *.o (RESET, +First)
+    *(InRoot$$Sections)
+    .ANY (+RO)
+  }
+  RW_RETAIN 0x20000000 UNINIT 0x00000100 {
+    *.o (RETENTION)
+  }
+  RW_IRAM1 0x20000100 0x00004F00 {
+    .ANY (+RW +ZI)
+  }
+}

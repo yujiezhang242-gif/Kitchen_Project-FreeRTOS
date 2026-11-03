@@ -1,0 +1,19 @@
+{
+  "elf": "../../build/firmware/kitchen.elf",
+  "flash_load_bytes": 18648,
+  "flash_limit_bytes": 63488,
+  "static_ram_bytes": 13572,
+  "interrupt_stack_reserved": 1024,
+  "remaining_ram_after_stack": 5884,
+  "static_allocation": true,
+  "reset_vector": "0x8004585",
+  "entry": "0x8004585",
+  "hardware_validated": false,
+  "source_build_fingerprint": "3248a39a1417f864781ca37dc1a437364d2ca84f3c434f9a1c6d6bede5ffb28d",
+  "artifact_sha256": {
+    "kitchen.elf": "7f1a8dc30aefe7541b3c62bc2771dab3b1905831b557e9e0123e44de228db71c",
+    "kitchen.hex": "863d969705dd3d32077396d56bac2b181bf97cccf387418b8a85f42cb38f11d7",
+    "kitchen.bin": "8774fdffcf30b59be303c16c4aa3432cb087bdb02750ec2cb04cbe1c1d5a5cd2",
+    "kitchen.map": "600d31a1a7de36531ae6b57386f65848035410dd279af6288fbd7d4a82320513"
+  }
+}
